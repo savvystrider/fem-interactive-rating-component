@@ -1,0 +1,107 @@
+:root {
+  --clr-orangish: #fc7613;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2em;
+  font-family: Overpass, sans-serif;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background-color: #141519;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+}
+
+.radio-input {
+  position: absolute;
+  top: -9000px;
+  left: -9000px;
+  opacity: 0;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  background-color: #272e38;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: #7f8891;
+  padding: 0.25em 1.25em;
+  font-family: inherit;
+  display: grid;
+  place-content: center;
+  transition: all 0.15s ease;
+}
+
+label:hover,
+label:focus {
+  background-color: #7e8798;
+  color: white;
+}
+
+input:checked + label {
+  background-color: var(--clr-orangish);
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background-color: var(--clr-orangish);
+  color: white;
+  border: 0;
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 1em;
+  letter-spacing: 0.1em;
+  margin-block: 1em;
+  transition: all 0.15s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: white;
+  color: var(--clr-orangish);
+}
+
+.card {
+  background: linear-gradient(180deg, #222933 0%, #171e28 100%);
+  padding: 2em;
+  border-radius: 1em;
+  max-width: 30rem;
+}
+
+.success-container {
+  display: none;
+}
+
+.form-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 2em;
+}
