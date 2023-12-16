@@ -132,3 +132,13 @@ button:focus {
   align-items: center;
   margin-block: 2em;
 }
+
+@media screen and (max-width: 50rem) {
+  label {
+    padding: 0.25em 1em;
+  }
+
+  .form-elements {
+    gap: 0.5em;
+  }
+}
