@@ -13,6 +13,79 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <main>
+      <div class="card">
+        <div class="form-container">
+          <img src="./images/icon-star.svg" alt="" aria-hidden="true" />
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form>
+            <div class="form-element">
+              <input
+                type="radio"
+                class="radio-input"
+                name="rating"
+                id="step-one"
+              />
+              <label for="step-one">1</label>
+            </div>
+            <div class="form-element">
+              <input
+                type="radio"
+                class="radio-input"
+                name="rating"
+                id="step-two"
+              />
+              <label for="step-two">2</label>
+            </div>
+            <div class="form-element">
+              <input
+                type="radio"
+                class="radio-input"
+                name="rating"
+                id="step-three"
+              />
+              <label for="step-three">3</label>
+            </div>
+            <div class="form-element">
+              <input
+                type="radio"
+                class="radio-input"
+                name="rating"
+                id="step-four"
+              />
+              <label for="step-four">4</label>
+            </div>
+            <div class="form-element">
+              <input
+                type="radio"
+                class="radio-input"
+                name="rating"
+                id="step-five"
+              />
+              <label for="step-five">5</label>
+            </div>
+            <button class="btn submit-btn">Submit</button>
+          </form>
+        </div>
+        <div class="success-container">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <p id="text-output"></p>
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
