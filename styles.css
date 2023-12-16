@@ -24,7 +24,12 @@ img {
   max-width: 100%;
 }
 
-h1 {
+.success-container img {
+  margin: 0 auto;
+}
+
+h1,
+h2 {
   color: white;
 }
 
@@ -88,15 +93,37 @@ button:focus {
   color: var(--clr-orangish);
 }
 
+.text-output {
+  color: var(--clr-orangish);
+  background-color: #2a2c35;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  text-align: center;
+  width: fit-content;
+  margin: 1em auto;
+  font-size: 0.9rem;
+}
+
 .card {
   background: linear-gradient(180deg, #222933 0%, #171e28 100%);
   padding: 2em;
   border-radius: 1em;
   max-width: 30rem;
+  outline: 2px solid rgba(252, 118, 19, 0.25);
+  outline-offset: 15px;
+}
+
+.form-container.inactive {
+  display: none;
 }
 
 .success-container {
   display: none;
+}
+
+.success-container.active {
+  display: block;
+  text-align: center;
 }
 
 .form-elements {
